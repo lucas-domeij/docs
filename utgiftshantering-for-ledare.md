@@ -1,23 +1,49 @@
-# Utläggshantering för ledare
-
 ## Översikt
 
 Utläggsfunktionen låter ledare och scouter registrera, hantera och få ersättning för utlägg kopplade till scoutaktiviteter. Funktionen ger ledare möjlighet att hantera hela processen från registrering till utbetalning och bokföring.
 
 ## Innehåll
 
-1. [Komma igång](#komma-igång)
-2. [Utläggslistan](#utläggslistan)
-3. [Skapa ett nytt utlägg](#skapa-ett-nytt-utlägg)
-4. [Automatisk tolkning av kvitton](#automatisk-tolkning-av-kvitton)
-5. [Granska och hantera utlägg](#granska-och-hantera-utlägg)
-6. [Statusar för utlägg](#statusar-för-utlägg)
-7. [Exportera till Google Sheets](#exportera-till-google-sheets)
-8. [Vanliga frågor](#vanliga-frågor)
+- [Översikt](#översikt)
+- [Innehåll](#innehåll)
+- [Komma igång](#komma-igång)
+- [Aktivera utläggsfunktionen](#aktivera-utläggsfunktionen)
+- [Utläggslistan](#utläggslistan)
+- [Skapa ett nytt utlägg](#skapa-ett-nytt-utlägg)
+- [Automatisk tolkning av kvitton](#automatisk-tolkning-av-kvitton)
+- [Granska och hantera utlägg](#granska-och-hantera-utlägg)
+- [Statusar för utlägg](#statusar-för-utlägg)
+- [Exportera till Google Sheets](#exportera-till-google-sheets)
+- [Vanliga frågor](#vanliga-frågor)
+  - [Hur ändrar jag ett utlägg som redan sparats?](#hur-ändrar-jag-ett-utlägg-som-redan-sparats)
+  - [Kan jag registrera ett utlägg utan kvitto?](#kan-jag-registrera-ett-utlägg-utan-kvitto)
+  - [Vad gör jag om den automatiska tolkningen av kvittot är felaktig?](#vad-gör-jag-om-den-automatiska-tolkningen-av-kvittot-är-felaktig)
+  - [Hur vet jag om ett utlägg har exporterats till ekonomibladet?](#hur-vet-jag-om-ett-utlägg-har-exporterats-till-ekonomibladet)
+  - [Kan en scout själv registrera ett utlägg?](#kan-en-scout-själv-registrera-ett-utlägg)
+  - [Vad händer om jag inte anger ett fliknamn i Google Sheets-inställningarna?](#vad-händer-om-jag-inte-anger-ett-fliknamn-i-google-sheets-inställningarna)
 
 ## Komma igång
 
 För att komma åt utläggsfunktionen, navigera till din avdelnings sida och klicka på "Utlägg" i sidomenyn. Detta visar avdelningens utläggslista.
+
+## Aktivera utläggsfunktionen
+
+Innan du kan använda utläggsfunktionen behöver den aktiveras för avdelningen:
+
+1. Gå till din avdelningssida
+2. Klicka på "Inställningar" i menyn
+3. Välj fliken "Funktioner"
+4. Aktivera "Utlägg" genom att dra reglaget till aktivt läge
+5. Klicka på "Spara"
+
+När funktionen är aktiverad behöver du också konfigurera kopplingen till Google Sheets:
+
+1. Gå till fliken "Ekonomi" som nu finns i inställningarna
+2. Skapa en flik i [kårens Google Sheets-dokument](https://docs.google.com/spreadsheets/d/1JrtadwQSKa4VhCrDV6qffgYTRyYzCYJ8Pa8Z-X76kpk/edit) med ett unikt namn för din avdelning
+3. Fyll i flikens exakta namn i fältet "Fliknamn i Google Sheets"
+4. Klicka på "Spara"
+
+Detta gör att alla godkända utlägg kan exporteras automatiskt till rätt flik i ekonomibladet.
 
 ## Utläggslistan
 
@@ -121,4 +147,7 @@ Den automatiska tolkningen är ett hjälpmedel. Du ska alltid kontrollera inform
 På utläggets detaljsida finns information om huruvida utlägget har exporterats eller inte.
 
 ### Kan en scout själv registrera ett utlägg?
-Ja, scouter kan registrera utlägg via sin egen inloggning. Dessa utlägg hamnar sedan i avdelningens utläggslista för godkännande av ledare. 
+Ja, scouter kan registrera utlägg via sin egen inloggning. Dessa utlägg hamnar sedan i avdelningens utläggslista för godkännande av ledare.
+
+### Vad händer om jag inte anger ett fliknamn i Google Sheets-inställningarna?
+Om inget fliknamn anges kommer exporten att misslyckas. Se till att skapa fliken i Google Sheets-dokumentet först och sedan ange exakt samma namn i inställningarna. 

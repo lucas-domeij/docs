@@ -14,25 +14,6 @@
         "tab": "Ledare",
         "groups": [
           {
-            "group": "Get Started",
-            "pages": [
-              "introduction",
-              "quickstart",
-              "development"
-            ]
-          },
-          {
-            "group": "Essentials",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/settings",
-              "essentials/navigation",
-              "essentials/reusable-snippets"
-            ]
-          },
-          {
             "group": "Administration",
             "pages": [
               "utgiftshantering-for-ledare"
@@ -43,12 +24,6 @@
       {
         "tab": "Scout & Förälder",
         "groups": [
-          {
-            "group": "API Documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          }
         ]
       }
     ]

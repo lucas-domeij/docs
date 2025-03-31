@@ -24,6 +24,12 @@
       {
         "tab": "Scout & Förälder",
         "groups": [
+          {
+            "group": "Profilhantering",
+            "pages": [
+              "uppdatera-personlig-information"
+            ]
+          }
         ]
       }
     ]
